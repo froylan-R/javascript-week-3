@@ -3,8 +3,6 @@ class person {
         this.name = name;
         this.job = job;
         this.age = age;
-        
-        //TODO: can i move these methods outside constructor; look up adding methods to JS class
         this.exercise = function () {
             console.log(`${this.name} does not like exercise`);
         };
@@ -30,12 +28,6 @@ class Programmer extends person {
             const msg = this.busy ? 'would love to take on new responsabilities' : 'cant acept any new responsabilites'
             
             console.log(`${this.name} ${msg}`);
-
-            // console.log(
-            //     this.busy
-            //     ? `${name} would love to take on new responsabilities`
-            //     :`${name} cant acept any new responsabilites`
-            // )
         };
         this.learnLanguage = function (language) {
             this.languages.push(language);
